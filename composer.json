@@ -1,0 +1,37 @@
+{
+    "name": "dazzlesoftware/event",
+    "type": "library",
+    "description": "Dazzle Event Package",
+    "keywords": ["dazzle", "framework", "event"],
+    "homepage": "https://github.com/dazzle-framework/event",
+    "license": "GPL-3.0-or-later",
+    "require": {
+        "php": "^7.3.0"
+    },
+    "require-dev": {
+        "dazzlesoftware/dazzle-coding-standard": "^1.0",
+        "dazzlesoftware/console": "^1.0",
+        "phpunit/phpunit": "^9.0",
+        "psr/container": "^1.0"
+    },
+    "suggest": {
+        "dazzlesoftware/console": "If you want to use the DebugEventDispatcherCommand class, please install dazzlesoftware/console",
+        "psr/container-implementation": "If you want to use the LazyServiceEventListener class, please install a PSR-11 container"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dazzle\\Event\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dazzle\\Event\\UnitTests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-2.0-dev": "2.0-dev"
+        }
+    }
+}
